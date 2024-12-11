@@ -15,8 +15,138 @@ a {
   --secondary-color--: #757881;
   --thirty-color--: #0d75ff;
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+header {
+  .navbar {
+    padding: 10px 0;
+    // margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-div {
+      padding: 10px 15px;
+      border-radius: 30px;
+      background: #f8fafd;
+      display: flex;
+      align-items: center;
+      .search-input {
+        font-family: Rubik;
+
+        width: 830px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+      }
+      .search-input::placeholder {
+        color: #0000003d;
+      }
+    }
+    .system {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      .logOut {
+        background: #0d75ff;
+        color: #fff;
+        border: none;
+        padding: 10px 23px;
+        font-family: Rubik;
+      }
+    }
+  }
+  .result-status {
+    padding: 10px;
+    display: flex;
+    border-top: 1px solid #e3e6eb;
+    border-bottom: 1px solid #e3e6eb;
+    align-items: center;
+    justify-content: space-between;
+    .resultP {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.59px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-left: 300px;
+    }
+    .orderbtn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: none;
+      padding: 8px 13px;
+      background: #a6b0c3;
+      border-radius: 5px;
+      color: #fff;
+      font-family: Rubik;
+    }
+  }
+}
+main {
+  .main-data {
+    .toolbar {
+      font-family: Rubik;
+      width: 270px;
+      height: 100%;
+      padding: 25px;
+      .toolbar-text-content {
+        margin-bottom: 25px;
+        h2 {
+          font-family: Rubik;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 28.44px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: var(--primary-color--);
+        }
+        p {
+          color: var(--primary-color--);
+          font-family: Rubik;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21.78px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+      }
+      .recently-book {
+        display: grid;
+        gap: 15px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 4px;
+          background: #f8fafd;
+          padding: 10px;
+          .book-info {
+            h3 {
+            }
+            p {
+              color: #757881;
+              font-family: Rubik;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21.78px;
+              text-align: left;
+              text-underline-position: from-font;
+              text-decoration-skip-ink: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

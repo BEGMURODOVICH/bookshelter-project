@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,124 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+header .navbar {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .search-div {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: #f8fafd;
+  display: flex;
+  align-items: center;
+}
+header .navbar .search-div .search-input {
+  font-family: Rubik;
+  width: 830px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+header .navbar .search-div .search-input::placeholder {
+  color: rgba(0, 0, 0, 0.2392156863);
+}
+header .navbar .system {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+header .navbar .system .logOut {
+  background: #0d75ff;
+  color: #fff;
+  border: none;
+  padding: 10px 23px;
+  font-family: Rubik;
+}
+header .result-status {
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #e3e6eb;
+  border-bottom: 1px solid #e3e6eb;
+  align-items: center;
+  justify-content: space-between;
+}
+header .result-status .resultP {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.59px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 300px;
+}
+header .result-status .orderbtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  padding: 8px 13px;
+  background: #a6b0c3;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Rubik;
+}
+
+main .main-data .toolbar {
+  font-family: Rubik;
+  width: 270px;
+  height: 100%;
+  padding: 25px;
+}
+main .main-data .toolbar .toolbar-text-content {
+  margin-bottom: 25px;
+}
+main .main-data .toolbar .toolbar-text-content h2 {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color--);
+}
+main .main-data .toolbar .toolbar-text-content p {
+  color: var(--primary-color--);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+main .main-data .toolbar .recently-book {
+  display: grid;
+  gap: 15px;
+}
+main .main-data .toolbar .recently-book li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background: #f8fafd;
+  padding: 10px;
+}
+main .main-data .toolbar .recently-book li .book-info p {
+  color: #757881;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 /*# sourceMappingURL=main.css.map */

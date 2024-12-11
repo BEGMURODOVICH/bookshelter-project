@@ -3,31 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BookShelter</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
-      <navbar>
-        <div class="container">
-          <nav>
-            <img src="img/logo.svg" alt="" />
-            <div class="search-div">
-              <img src="img/search.svg" alt="" />
-              <input type="search" />
-            </div>
-            <div class="system">
-              <img src="img/dark-menu.svg" alt="" />
-              <button class="logOut">Logout</button>
-            </div>
-          </nav>
+      <div class="container">
+        <div class="navbar">
+          <img src="img/logo.svg" alt="" />
+          <div class="search-div">
+            <img src="img/search.svg" alt="" />
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Search books"
+            />
+          </div>
+          <div class="system">
+            <img src="img/dark-menu.svg" alt="" />
+            <button class="logOut">Logout</button>
+          </div>
         </div>
-      </navbar>
+        <div class="result-status">
+          <p class="resultP">Showing 18 Result(s)</p>
+          <button class="orderbtn">
+            <img src="img/calendar.svg" alt="" />
+            Order by newest
+          </button>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="main-data">
-        <div class="toolbar"></div>
-        <div class="main-content"></div>
+      <div class="container">
+        <div class="main-data">
+          <div class="toolbar">
+            <div class="toolbar-text-content">
+              <h2>Bookmarks</h2>
+              <p>If you don’t like to read, you haven’t found the right book</p>
+            </div>
+            <ul class="recently-book">
+              <li>
+                <div class="book-info">
+                  <h3>Python</h3>
+                  <p>David M. Beazley</p>
+                </div>
+                <div class="action">
+                  <img src="img/book-open.svg" alt="" />
+                  <img src="img/delete.svg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="book-info">
+                  <h3>Python</h3>
+                  <p>David M. Beazley</p>
+                </div>
+                <div class="action">
+                  <img src="img/book-open.svg" alt="" />
+                  <img src="img/delete.svg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="book-info">
+                  <h3>Python</h3>
+                  <p>David M. Beazley</p>
+                </div>
+                <div class="action">
+                  <img src="img/book-open.svg" alt="" />
+                  <img src="img/delete.svg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main-content"></div>
+        </div>
       </div>
     </main>
     <footer></footer>
