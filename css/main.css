@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color--: #000000;
+  --secondary-color--: #757881;
+  --thirty-color--: #0d75ff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
