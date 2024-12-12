@@ -19,12 +19,19 @@ a {
   --thirty-color--: #0d75ff;
 }
 
+body {
+  background-color: #f8fafd;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
+header {
+  background-color: #fff;
+}
 header .navbar {
   padding: 10px 0;
   display: flex;
@@ -32,6 +39,7 @@ header .navbar {
   justify-content: space-between;
 }
 header .navbar .search-div {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1019607843);
   padding: 10px 15px;
   border-radius: 30px;
   background: #f8fafd;
@@ -54,7 +62,11 @@ header .navbar .system {
   gap: 25px;
   align-items: center;
 }
+header .navbar .system img {
+  cursor: pointer;
+}
 header .navbar .system .logOut {
+  cursor: pointer;
   background: #0d75ff;
   color: #fff;
   border: none;
@@ -80,6 +92,7 @@ header .result-status .resultP {
   margin-left: 300px;
 }
 header .result-status .orderbtn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -91,11 +104,134 @@ header .result-status .orderbtn {
   font-family: Rubik;
 }
 
+main {
+  background-color: #fff;
+}
+main .modal-content-active {
+  transition: ease all 1s;
+  transform: translateX(-500px);
+}
+main .more-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+}
+main .more-modal .modal-content {
+  transform: translateX(500px);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  overflow-y: auto;
+  background-color: #fff;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  bottom: 0;
+}
+main .more-modal .modal-content .modal-head {
+  background: #f8fafd;
+}
+main .more-modal .modal-content .modal-head .modal-head-content {
+  padding: 25px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .more-modal .modal-content .modal-head .modal-head-content .modal-close-btn {
+  cursor: pointer;
+}
+main .more-modal .modal-content .modal-head .modal-head-content h2 {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color--);
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-img {
+  margin: 35px 0;
+  margin-left: 130px;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-img img {
+  width: 170px;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-info {
+  height: 300px;
+  overflow-y: auto;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-info p {
+  font-family: Rubik;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.14px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #58667e;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-last-info {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-last-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-last-info li h3 {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.59px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color--);
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-last-info li .information {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .more-modal .modal-content .modal-main .modal-main-content .modal-book-last-info li .information h3 {
+  background: rgba(13, 117, 255, 0.0901960784);
+  font-family: Rubik;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #0d75ff;
+}
+main .more-modal .modal-content .modal-foot {
+  background: #f8fafd;
+}
+main .more-modal .modal-content .modal-foot .modal-foot-content {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .more-modal .modal-content .modal-foot .modal-foot-content button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Rubik;
+  background: #75828a;
+  border: none;
+}
+main .main-data {
+  display: flex;
+}
 main .main-data .toolbar {
   font-family: Rubik;
   width: 270px;
-  height: 100%;
-  padding: 25px;
+  height: auto;
+  padding: 25px 25px 25px 0;
 }
 main .main-data .toolbar .toolbar-text-content {
   margin-bottom: 25px;
@@ -141,6 +277,88 @@ main .main-data .toolbar .recently-book li .book-info p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+main .main-data .toolbar .recently-book li .action img {
+  cursor: pointer;
+}
+main .main-data .main-content {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f8fafd;
+}
+main .main-data .main-content .books::-webkit-scrollbar {
+  display: none;
+}
+main .main-data .main-content .books {
+  padding-bottom: 250px;
+  max-height: 800px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main .main-data .main-content .books li {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+main .main-data .main-content .books li img {
+  width: 201px;
+  height: 201px;
+}
+main .main-data .main-content .books li h3 {
+  font-family: Rubik;
+}
+main .main-data .main-content .books li p {
+  color: #757881;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+main .main-data .main-content .books li .book-btn .book-action {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main-data .main-content .books li .book-btn .book-action .bookmarkBtn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: Rubik;
+  background: #ffd80d;
+}
+main .main-data .main-content .books li .book-btn .book-action .moreInfoBtn {
+  background: rgba(13, 117, 255, 0.0509803922);
+  color: #0d75ff;
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: Rubik;
+}
+main .main-data .main-content .books li .book-btn .readBtn {
+  cursor: pointer;
+  width: 100%;
+  background: #75828a;
+  border-radius: 4px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  font-family: Rubik;
 }
 
 /*# sourceMappingURL=main.css.map */

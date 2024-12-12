@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+body {
+  background-image: url(/img/login-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .body-content .sigin-form {
+  display: none;
+}
+body .body-content .registration .logo {
+  margin-bottom: 50px;
+}
+body .body-content .registration form .input-div {
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .body-content .registration form .input-div input {
+  font-family: Rubik;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+body .body-content .registration form .input-div input::placeholder {
+  color: #ffffff;
+}
+body .body-content .registration form .loginBtn {
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #0d75ff;
+  border-radius: 4px;
+  border: none;
+  padding: 13px;
+  width: 100%;
+}
+body .body-content .registration form .forgot-password {
+  display: flex;
+  justify-content: end;
+}
+body .body-content .registration form .forgot-password p:hover {
+  color: #0d75ff;
+}
+body .body-content .registration form .forgot-password .enter-signup,
+body .body-content .registration form .forgot-password .enter-login {
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+/*# sourceMappingURL=registration.css.map */
