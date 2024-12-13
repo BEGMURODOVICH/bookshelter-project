@@ -29,13 +29,11 @@ header {
 
   .navbar {
     padding: 10px 0;
-    // margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     .search-div {
       box-shadow: 0px 0px 3px 0px #0000001a;
-
       padding: 10px 15px;
       border-radius: 30px;
       background: #f8fafd;
@@ -43,7 +41,6 @@ header {
       align-items: center;
       .search-input {
         font-family: Rubik;
-
         width: 830px;
         padding: 10px;
         outline: none;
@@ -107,16 +104,17 @@ main {
     transition: ease all 1s;
     transform: translateX(-500px);
   }
+
   .more-modal {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: none;
+    // background: #00000080;
     .modal-content {
       transform: translateX(500px);
-
       box-shadow: 0px 1px 4px 0px #00000040;
       overflow-y: auto;
       background-color: #fff;
@@ -297,7 +295,6 @@ main {
         display: none;
       }
       .books {
-        padding-bottom: 250px;
         max-height: 800px;
         overflow-y: auto;
         display: flex;
@@ -337,6 +334,7 @@ main {
               align-items: center;
               justify-content: space-between;
               .bookmarkBtn {
+                cursor: pointer;
                 width: 48%;
                 padding: 10px;
                 border: none;
@@ -345,6 +343,7 @@ main {
                 background: #ffd80d;
               }
               .moreInfoBtn {
+                cursor: pointer;
                 background: #0d75ff0d;
                 color: #0d75ff;
 

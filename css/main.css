@@ -112,12 +112,12 @@ main .modal-content-active {
   transform: translateX(-500px);
 }
 main .more-modal {
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: none;
 }
 main .more-modal .modal-content {
   transform: translateX(500px);
@@ -292,7 +292,6 @@ main .main-data .main-content .books::-webkit-scrollbar {
   display: none;
 }
 main .main-data .main-content .books {
-  padding-bottom: 250px;
   max-height: 800px;
   overflow-y: auto;
   display: flex;
@@ -334,6 +333,7 @@ main .main-data .main-content .books li .book-btn .book-action {
   justify-content: space-between;
 }
 main .main-data .main-content .books li .book-btn .book-action .bookmarkBtn {
+  cursor: pointer;
   width: 48%;
   padding: 10px;
   border: none;
@@ -342,6 +342,7 @@ main .main-data .main-content .books li .book-btn .book-action .bookmarkBtn {
   background: #ffd80d;
 }
 main .main-data .main-content .books li .book-btn .book-action .moreInfoBtn {
+  cursor: pointer;
   background: rgba(13, 117, 255, 0.0509803922);
   color: #0d75ff;
   width: 48%;
