@@ -160,7 +160,7 @@ main .more-modal .modal-content .modal-main .modal-main-content .modal-book-img 
   width: 170px;
 }
 main .more-modal .modal-content .modal-main .modal-main-content .modal-book-info {
-  height: 300px;
+  height: auto;
   overflow-y: auto;
 }
 main .more-modal .modal-content .modal-main .modal-main-content .modal-book-info p {

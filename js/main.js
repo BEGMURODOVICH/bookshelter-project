@@ -12,12 +12,16 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
     posts.forEach((post) => {
       const bookElement = document.createElement("li");
+      bookElement.classList.add("book-item");
+
+      // To'liq ma'lumotni data atributga saqlaymiz
+      bookElement.setAttribute("data-post", JSON.stringify(post));
+
       bookElement.innerHTML = `<div class="book-info">
           <img src="img/book1.svg" alt="" />
           <div class="info">
             <h3>${post.title.slice(0, 5)}</h3>
             <p>${post.body.slice(0, 10)}</p>
-            <p>${post.id}</p>
           </div>
           <div class="book-btn">
             <div class="book-action">
@@ -32,6 +36,24 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     });
 
     bookUl.addEventListener("click", (event) => {
+      const bookItem = event.target.closest(".book-item");
+      if (bookItem) {
+        const postData = JSON.parse(bookItem.getAttribute("data-post"));
+
+        const moreModalTitle = (document.querySelector(
+          ".moreModalTitle"
+        ).textContent = postData.title);
+        const moreModalP = (document.querySelector(".moreModalP").textContent =
+          postData.body);
+
+        const categoryP = document.querySelectorAll(".categoryP");
+        categoryP.forEach((info) => {
+          info.textContent = postData.id;
+        });
+
+        console.log(postData.id);
+      }
+
       if (event.target.classList.contains("moreInfoBtn")) {
         moreModal.style.display = "block";
         moreModal.style.background = "#00000080";
@@ -57,17 +79,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!username || !password) {
     window.location.href = "login-sigin.html";
-  }
-});
-
-bookUl.addEventListener("click", (event) => {
-  if (event.target.closest(".book-item")) {
-    const postElement = event.target.closest(".book-item");
-    const title = postElement.querySelector(".info h3").textContent;
-    const body = postElement.querySelector(".info p").textContent;
-    const id = postElement.querySelector(".info + p").textContent;
-    console.log(`Post ID: ${id}`);
-    console.log(`Title: ${title}`);
-    console.log(`Body: ${body}`);
   }
 });
