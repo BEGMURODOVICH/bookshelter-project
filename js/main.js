@@ -14,7 +14,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
       const bookElement = document.createElement("li");
       bookElement.classList.add("book-item");
 
-      // To'liq ma'lumotni data atributga saqlaymiz
       bookElement.setAttribute("data-post", JSON.stringify(post));
 
       bookElement.innerHTML = `<div class="book-info">
@@ -50,8 +49,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
         categoryP.forEach((info) => {
           info.textContent = postData.id;
         });
-
-        console.log(postData.id);
       }
 
       if (event.target.classList.contains("moreInfoBtn")) {
@@ -80,4 +77,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!username || !password) {
     window.location.href = "login-sigin.html";
   }
+});
+
+// bookmarks ishlamadi
+
+const recentlyBook = document.querySelector(".recently-book");
+const bookmarkBtn = document.querySelectorAll(".bookmarkBtn");
+
+bookmarkBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("salom");
+  });
 });
