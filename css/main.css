@@ -17,10 +17,22 @@ a {
   --primary-color--: #000000;
   --secondary-color--: #757881;
   --thirty-color--: #0d75ff;
+  --body-color--: #fff;
+  --head-color--: #fff;
+  --fifth-color--: #f8fafd;
+}
+
+.dark-mode {
+  --primary-color--: #fff;
+  --secondary-color--: #757881;
+  --thirty-color--: #0d75ff;
+  --body-color--: #9aa6b2;
+  --head-color--: #074799;
+  --fifth-color--: #d6cfb4;
 }
 
 body {
-  background-color: #f8fafd;
+  background-color: #fff;
 }
 
 .container {
@@ -30,7 +42,7 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background-color: var(--head-color--);
 }
 header .navbar {
   padding: 10px 0;
@@ -82,6 +94,7 @@ header .result-status {
   justify-content: space-between;
 }
 header .result-status .resultP {
+  color: var(--primary-color--);
   font-family: Rubik;
   font-size: 14px;
   font-weight: 500;
@@ -105,7 +118,7 @@ header .result-status .orderbtn {
 }
 
 main {
-  background-color: #fff;
+  background-color: var(--body-color--);
 }
 main .modal-content-active {
   transition: ease all 1s;
@@ -286,7 +299,7 @@ main .main-data .main-content {
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #f8fafd;
+  background-color: var(--fifth-color--);
 }
 main .main-data .main-content .books::-webkit-scrollbar {
   display: none;

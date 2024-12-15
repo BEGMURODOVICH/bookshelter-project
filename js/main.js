@@ -2,6 +2,14 @@ const modalClose = document.getElementById("modalClose");
 const moreModal = document.querySelector(".more-modal");
 const modalContent = document.querySelector(".modal-content");
 const bookUl = document.querySelector(".books");
+const darkModeBtn = document.getElementById("darkModeBtn");
+const body = document.body;
+
+// dark menu
+darkModeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
+//
 
 fetch("https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json())
